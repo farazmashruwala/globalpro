@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      {% block head %} {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+<body>
+  <header>
+    <nav id="navigation-base">
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('upload') }}">Upload</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

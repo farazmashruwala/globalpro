@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>About Developer</title>
+{% endblock %}
+{% block content %}
+  <h1>About Me</h1>
+  <p>I am an individual developer who is passionate about creating web applications using Flask.</p>
+  <footer>
+    <div class="footer-info">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+      <h3>Rehan khan</h3>
+      <p>Phone: +91 9630357471</p>
+      <p>Email: rekhan123451@live.com</p>
+      <p><a href="https://www.linkedin.com/in/iamrehankhan/">LinkedIn</a></p>
+    </div>
+  </footer>
+
+{% endblock %}

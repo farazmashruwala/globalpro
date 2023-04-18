@@ -1,0 +1,224 @@
+#navigation-base {
+  background-color: #333;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#navigation-base ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation-base li {
+  display: inline-block;
+}
+
+#navigation-base a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#navigation-base a:hover {
+  background-color: #555;
+}
+
+#navigation-base .active {
+  background-color: #4CAF50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*login form*/
+/* Center the form horizontally and vertically */
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Style the form fields */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Style the form button */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn:disabled {
+  opacity: 0.65;
+}
+
+/*login instructions*/
+#loginh1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+/*footer*/
+/* styles.css */
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.footer-info img {
+  width: 80px;
+  margin-bottom: 1em;
+}
+
+.footer-info h3 {
+  margin: 0.5em 0;
+}
+
+.footer-info p {
+  margin: 0.2em 0;
+}
+
+.footer-info a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #007bff;
+  padding: 0.3em 1em;
+  border-radius: 0.3em;
+  margin-top: 0.5em;
+}
+
+.footer-info a:hover {
+  background-color: #0062cc;
+}
+
+
+/*admin panel form*/
+#admin-heading {
+  font-size: 2em;
+  color: #333;
+}
+
+#admin-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.file-row {
+  border-bottom: 1px solid #ccc;
+}
+
+.file-row:hover {
+  background-color: #f5f5f5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-download {
+  background-color: #4CAF50;
+}
+
+.btn-download:hover {
+  background-color: #3e8e41;
+}
+
+.btn-open {
+  background-color: #2196F3;
+}
+
+.btn-open:hover {
+  background-color: #0c7cd5;
+}
+

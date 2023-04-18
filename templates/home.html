@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Homepage</title>
+{% endblock %}
+{% block content %}
+  <h1>Welcome to the Home Page</h1>
+  <p>Please click <a href="{{ url_for('login') }}">here</a> to login.</p>
+{% endblock %}

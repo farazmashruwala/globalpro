@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Panel{% endblock %}
+
+{% block content %}
+    <h2 id="admin-heading">Admin Panel</h2>
+    <table id="admin-table">
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>File</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for file in files %}
+                <tr class="file-row">
+                    <td>{{ loop.index }}</td>
+                    <td>{{ file }}</td>
+                    <td>
+                        <a href="{{ url_for('download_file', filename=file) }}" class="btn btn-download">Download</a> /
+                        <a href="{{ url_for('open_file', filename=file) }}" class="btn btn-open">Open</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="3">No files uploaded yet.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
